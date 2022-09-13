@@ -19,9 +19,9 @@ class ValidateEmailServiceTest {
         boolean result3 = service.isEmailValid(isThisValid);
 
         //Assert
-        assertEquals(true,result1);
-        assertEquals(false,result2);
-        assertEquals(true,result3);
+        assertTrue(result1);
+        assertFalse(result2);
+        assertTrue(result3);
     }
 
 }
