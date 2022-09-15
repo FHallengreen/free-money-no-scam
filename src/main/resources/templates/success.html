@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>You have successfully applied!</title>
-  <link rel="stylesheet" th:href="@{style.css}" href="../static/style.css">
+    <link rel="stylesheet" th:href="@{style.css}" href="../static/style.css">
 </head>
 <body>
-<p class="content">It's over 9000!!!</p>
+<div class="content">
+    <img th:src="@{images/Money.png}" src="../static/images/Money.png" style="height: 100px; width: 100px"><h1>TILLYKKE!!</h1>
+    <span style="font-weight: bold" th:text="${email}">email</span> er nu registeret!<br>
+    <h2>List of registered users: </h2><span th:text="${emails}">emails</span>
+<br>
+    <button onclick="location.href = '/home';">Home</button>
+</div>
+
+
 </body>
 </html>
